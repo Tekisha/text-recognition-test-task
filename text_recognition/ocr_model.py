@@ -41,7 +41,7 @@ class OCRModel:
         # Convert the image to grayscale
         gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-        text = pytesseract.image_to_string(gray_image, lang=detected_lang)
+        text = pytesseract.image_to_string(gray_image, lang='eng+chi_sim', config='--oem 1 --psm 6 -c preserve_interword_spaces=1')
 
         return text.strip()
 
@@ -57,7 +57,7 @@ class OCRModel:
 
             return lang_mapping.get(language)
         except:
-            return "en"
+            return "eng"
 
 
 if __name__ == "__main__":
