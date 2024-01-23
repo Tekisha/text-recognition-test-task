@@ -1,2 +1,7 @@
 python-Levenshtein
-numpy
+numpy~=1.26.2
+pytesseract~=0.3.10
+Levenshtein~=0.23.0
+opencv-python~=4.8.1.78
+langdetect~=1.0.9
+easyocr~=1.7.1

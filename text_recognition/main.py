@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from text_recognition.ocr_model import OCRModel
-from text_recognition.evaluation import evaluate_model
+from ocr_model import OCRModel
+from evaluation import evaluate_model
 
 
 def main():
